@@ -8,6 +8,7 @@ import { UsersService } from 'src/app/users.service';
 })
 export class UserDetailsComponent implements OnInit {
   userArray: any;
+  pageName="Manage"
   constructor(private list: UsersService) { }
   show: boolean = false;
   ngOnInit(): void {
@@ -20,5 +21,8 @@ export class UserDetailsComponent implements OnInit {
     this.selectedUser = user;
   }
 
+  fun(){
+    return true;
+  }
 
 }

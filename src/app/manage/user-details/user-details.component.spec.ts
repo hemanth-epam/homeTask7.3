@@ -20,4 +20,12 @@ describe('UserDetailsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("Manage Page Rendered",()=>{
+    expect(component.pageName).toBe("Manage");
+  });
+
+  it("Page Functions are Running Properly",()=>{
+    expect(component.fun()).toBe(true);
+  });
 });

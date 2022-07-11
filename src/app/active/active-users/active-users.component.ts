@@ -7,12 +7,15 @@ import { UsersService } from 'src/app/users.service';
   styleUrls: ['./active-users.component.css']
 })
 export class ActiveUsersComponent implements OnInit {
-
+  pageName="Active";
   userArray: any;
 
   constructor(private list: UsersService) { }
   show: boolean = false;
   ngOnInit(): void {
     this.userArray = this.list.getUsers();
+  }
+  fun(){
+    return true;
   }
 }

@@ -8,13 +8,16 @@ import { UsersService } from 'src/app/users.service';
 export class DeletedUsersComponent implements OnInit {
 
   userArray: any;
-
+  pageName="Del";
   constructor(private list: UsersService) { }
 
   ngOnInit(): void {
     this.userArray = this.list.getUsers();
 
 
+  }
+  fun(){
+    return true;
   }
 
 }

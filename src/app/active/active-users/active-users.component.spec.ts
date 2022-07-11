@@ -20,4 +20,13 @@ describe('ActiveUsersComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it("Testing Page Rendered",()=>{
+    expect(component.pageName).toBe("Active");
+  });
+
+  it("Page Functions are Running Properly",()=>{
+    expect(component.fun()).toBe(true);
+  });
+
 });
